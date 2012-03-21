@@ -16,10 +16,10 @@ First, require the gem: edit your `Gemfile`, add the following, and run `bundle 
 gem 'manybots-gardener', :git => 'git://github.com/manybots/manybots-weather.git'
 ```
 
-Second, run the manybots-weather install generator (mind the underscore):
+Second, run the manybots-gardener install generator (mind the underscore):
 
 ```
-rails g manybots_weather:install
+rails g manybots_gardener:install
 ```
 
 ### Restart and go!
