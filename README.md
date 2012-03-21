@@ -13,7 +13,7 @@ You need the latest version of Manybots Local running on your system. Open your 
 First, require the gem: edit your `Gemfile`, add the following, and run `bundle install`
 
 ```
-gem 'manybots-gardener', :git => 'git://github.com/manybots/manybots-weather.git'
+gem 'manybots-gardener', :git => 'git://github.com/manybots/manybots-gardener.git'
 ```
 
 Second, run the manybots-gardener install generator (mind the underscore):
