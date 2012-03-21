@@ -1,0 +1,19 @@
+<div class="clearfix" style="margin-bottom: 20px;">
+  <%= image_tag('manybots-gardener/icon.png', :align => :left, :width => 40, :style=> 'margin-right: 10px;') %>
+  <h2>Gardener Agent</h2>
+</div>
+
+<div class="card">
+  <h4>
+    Alerts are <strong><%= @schedule == true ? 'ON' : 'OFF' %></strong>
+  </h4>
+  
+  <p>At 1pm every day, the Gardener Agent will notify and predict whether you need to water the plants based on weather conditions reported to your Account.</p>
+
+  <%- if @schedule == true -%> 
+    <p><%= link_to 'Stop the agent', toggle_path, method: :post %></p>
+  <%- else -%>
+    <p><%= link_to 'Start the agent', toggle_path, method: :post %></p>
+  <%- end -%>
+</div>
+
